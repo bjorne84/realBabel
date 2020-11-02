@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <div class="headContainer widhtMain">
+            <div class="logoHolder">
+                <a href="index.html"><img id="logosize" src="images/matprepp.png" alt="logotyp"></a>
+            </div>
+            <div class="navHold">
+
+                <div class="nav-toggle">
+                    <div class="nav-toggle-bar"></div>
+                </div>
+                <nav class="nav">
+                    <ul id="menu">
+                        <li class="li"><a class="menuText" href="index.html">Start</a></li>
+                        <li class="li"><a class="menuText" href="#">Små kärnkraftverk</a></li>
+                        <li class="li"><a class="menuText" href="#">Uran</a></li>
+                        <li class="li"><a class="menuText" href="#">Nuclear dance</a></li>
+                        <li class="li"><a class="menuText" href="#">Atomubåtar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <main>
-        <h1>Test</h1>
-        <a href="">länk</a>
-        <button id="btn">Get text</button>
-        <button id="btn2">Get users</button>
-        <button id="btn3">Get posts</button>
-        <button id="btn4">Get people</button>
-        <div id="outText"></div>
-        <div id="output"></div>
-        <div id="output2"></div>
-        <div id="output3"></div>
+        <div id="darkMode">
+            <section class="widhtMain" id="sectionOne">
+                <div id="helloWrapper">
+                    <h1 id="helloH1">Hej!</h1>
+                    <div id="helloImg" class="verticalCenter">
+                        <picture id="helloPhoto">
+                            <source class="roundImg" srcset="images/200411_bjorn.jpg" media="(min-width: 800px)">
+                            <img class="roundImg" src="/images/200411_bjorn.jpg" alt="bild på mig" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="hello2">
+                    <p class="pHello">
+                        Björn här, snart färdigutbildad fullstack webbutvecklare med egen erfarenhet av driva e-handel.
+                    </p>
+                    <p class="pHello">
+                        Snabba användarvänliga och sökmotoroptimerade webblösningar är det jag brinner för att bygga.
+                    </p>
+                    <p class="pHello">
+                        Det spelar ingen roll hur flashig design du har om inte besökarna eller gud förbjude google
+                        hittar på eller till sidan.
+                    </p>
+                </div>
+                <div class="arrowFlipper">
 
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                        height="121" viewbox="0 0 121 121">
+                        <defs>
+                            <clippath id="clip-path">
+                                <rect width="121" height="121" fill="none" />
+                            </clippath>
+                        </defs>
+                        <g id="Down_arrow" data-name="Down arrow" clip-path="url(#clip-path)">
+                            <path id="Path_10" data-name="Path 10"
+                                d="M42.5,0,34.773,7.727,64.026,36.981H0V48.019H64.026L34.773,77.273,42.5,85,85,42.5Z"
+                                transform="translate(85) rotate(90)" fill="#707070" />
+                        </g>
+                    </svg>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer></footer>
-
+    <footer>
+        <div class="footContainer"></div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>
