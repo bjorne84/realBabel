@@ -1,5 +1,25 @@
 # Moment 4 BABEL
 
+## Instruktioner
+Man startar systemet genom att först clone repon där gulpen finns sparad.    
+I bash skriver man $ git clone git@github.com:bjorne84/gulp.git  
+Sedan kör man i kommandocentralen kommandot nom install i den filkatalog som man valt  
+När det är gjort skriver man bara npm gulp i kommandocentralen så kickar allt igång.
+Recept för att klona och sedan skapa ny extern repo:
+1. Klona genom ange i terminalen: $ git clone git@github.com:bjorne84/gulp.git
+2. Kontrollera vilken remote origin du har: git remote -v
+3. Skapa nytt repo på github
+4. Ändra remote origin: git remote set-url origin https://github.com/bjorne84/realBabel.git
+5. Kontrollera att ändringarna genomförts med: git remote -v
+6  
+
+* Välj mellan SASS och CSS  
+Denna gulp-mall innehåller både funktionalitet för sass-kod och css.  
+Det enda man behöver ändra på är sökfilvägen i html-headern.   
+Antingen href="scss/styles.css" eller href="css/style.css"
+	
+
+
 ## Automatiseringsprocess:
 Syftet är att förenkla processerna som man gör för alla webbprojekt. Det är exempelvis att minifiera filer, komprimera filer, slå samman filer. 
 
@@ -31,18 +51,6 @@ Biblotek som behövs för att automatiskt kunna kompila kod sasskod till css.
 * **"@babel/core**  
 Transpilerar kod från ES6 -> ES5.
 
-
-## Instruktioner
-Man startar systemet genom att först clone repon där gulpen finns sparad.    
-I bash skriver man $ git clone git@github.com:bjorne84/gulp.git  
-Sedan kör man i kommandocentralen kommandot nom install i den filkatalog som man valt  
-När det är gjort skriver man bara npm gulp i kommandocentralen så kickar allt igång.  
-
-* Välj mellan SASS och CSS  
-Denna gulp-mall innehåller både funktionalitet för sass-kod och css.  
-Det enda man behöver ändra på är sökfilvägen i html-headern.   
-Antingen href="scss/styles.css" eller href="css/style.css"
-	
 ## Tasks: 
 * **htmlTask**  
 Tar bort kommentarer(minifierar) och kopierar filerna till den publika katalogen.
